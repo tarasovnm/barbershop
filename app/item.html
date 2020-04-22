@@ -2,18 +2,103 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Html-template</title>
+    <title>Барбершоп «Бородинский»</title>
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
 		<link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
 <body>
-	<h1>HTML-template</h1>
-	<p>Базовый шаблон для верстки</p>
-	<h2>Основные возможности</h2>
-	<ul>
-		<li>Автообновление в браузере</li>
-		<li>Sass</li>
-	</ul>
-	<cite>Источник: <a href="https://webdesign-master.ru/blog/tools/2016-03-09-gulp-beginners.html">Gulp для самых маленьких by webdesign-master</a></cite>
+  <header>
+		<div class="logo"></div>
+		<nav class="main-nav">
+			<ul class="main-nav-list">
+				<li><a href="#" class="main-nav-item">Информация</a></li>
+				<li><a href="#" class="main-nav-item">Новости</a></li>
+				<li><a href="price.html" class="main-nav-item">Прайс-лист</a></li>
+				<li><a href="shop.html" class="main-nav-item">Магазин</a></li>
+				<li><a href="#" class="main-nav-item">Контакты</a></li>
+      </ul>
+      <div class="login">
+        <a href="" class="login-link">Вход</a>
+      </div>
+		</nav>
+  </header>
+  
+  <main>
+    <h1>Набор для путешествий «Baxter of California»</h1>
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs-item"><a href="index.html">Главная</a></li> 
+      <li class="breadcrumbs-item"><a href="shop.html">Магазин</a></li>
+      <li class="breadcrumbs-item"><a href="#">Средства для ухода</a></li>
+      <li class="breadcrumbs-item"><a href="#">Набор для путешествий «Baxter of California»</a></li>
+    </ul>
+
+    <div class="about-item">
+
+      <div class="gallery">
+        <div class="main-image"></div>
+        <ul class="gallery-list">
+          <li class="gallery-list-item"></li>
+          <li class="gallery-list-item"></li>
+          <li class="gallery-list-item"></li>
+        </ul>
+      </div>
+  
+      <div class="item-info">
+        <div class="description">
+          <div class="availability-and-articul">
+            <p class="alailability">Есть в наличии</p>
+            <p class="articul">Артикул: dexter-ae</p>
+          </div>
+
+          <p class="text-description">
+            Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.
+          </p>
+
+          <div class="buy-item">
+            <p class="price">2 900 ₽</p>
+            <a href="" class="buy-btn">Купить</a>
+          </div>
+
+          <div class="composition">
+            <p>В набор входят:</p>
+            <ul class="compositon-list">
+              <li class="composition-list-item">Средство для умывания (50 мл)</li>
+              <li class="composition-list-item">Увлажняющий крем (50 мл)</li>
+              <li class="composition-list-item">Крем для бритья (50 мл)</li>
+              <li class="composition-list-item">Крем после бритья, шампунь (50 мл)</li>
+              <li class="composition-list-item">Удобная кожаная косметичка</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <p class="coorditates">
+      Барбершоп «Бородинский»<br>
+      Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
+      <a href="">Как нас найти?</a> <br>
+      Телефон: +7 (495) 666-02-66
+    </p>
+
+    <div class="socials">
+      <p>Давайте дружить</p>
+      <ul class="socials-list">
+        <li class="socials-list-item"><a href="" class="vk-link">Вконтакте</a></li>
+        <li class="socials-list-item"><a href="" class="fb-link">Facebook</a></li>
+        <li class="socials-list-item"><a href="" class="inst-link">Instagram</a></li>
+      </ul>
+    </div>
+
+    <div class="copyright">
+      <p>Разработано</p>
+      <a href="" class="btn">HTML Academy</a>
+    </div>
+	</footer>
+
 </body>
 </html>

@@ -2,18 +2,101 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Html-template</title>
+    <title>Барбершоп «Бородинский»</title>
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
 		<link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
 <body>
-	<h1>HTML-template</h1>
-	<p>Базовый шаблон для верстки</p>
-	<h2>Основные возможности</h2>
-	<ul>
-		<li>Автообновление в браузере</li>
-		<li>Sass</li>
-	</ul>
-	<cite>Источник: <a href="https://webdesign-master.ru/blog/tools/2016-03-09-gulp-beginners.html">Gulp для самых маленьких by webdesign-master</a></cite>
+
+  <header>
+		<div class="logo"></div>
+		<nav class="main-nav">
+			<ul class="main-nav-list">
+				<li><a href="#" class="main-nav-item">Информация</a></li>
+				<li><a href="#" class="main-nav-item">Новости</a></li>
+				<li><a href="price.html" class="main-nav-item">Прайс-лист</a></li>
+				<li><a href="shop.html" class="main-nav-item">Магазин</a></li>
+				<li><a href="#" class="main-nav-item">Контакты</a></li>
+      </ul>
+      <div class="login">
+        <a href="" class="login-link">Вход</a>
+      </div>
+		</nav>
+  </header>
+    
+  <main>
+
+    <h1>Прайс-лист</h1>
+
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs-item"><a href="index.html">Главная</a></li> 
+      <li class="breadcrumbs-item"><a href="price.html">Прайс-лист</a></li>
+    </ul>
+
+    <p class="slogan">Истинно мужская классика</p>
+
+    <div class="products">
+      <h2>Мы используем только лучшие средства:</h2>
+      <ul class="product-list">
+        <li class="product-list-item">Baxter of California</li>
+        <li class="product-list-item">Mr Natty</li>
+        <li class="product-list-item">Suavecito</li>
+        <li class="product-list-item">Malin+Goetz</li>
+      </ul>
+    </div>
+
+    <div class="prices">
+      <h2>Цены на услуги наших мастеров:</h2>
+      <table>
+        <tr>
+          <td>Стрижка</td>
+          <td>1500 ₽</td>
+        </tr>
+        <tr>
+          <td>Стрижка бороды</td>
+          <td>500 ₽</td>
+        </tr>
+        <tr>
+          <td>Накрутка усов</td>
+          <td>350 ₽</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="about-us">
+      <h2>Несколько слов о нас:</h2>
+      <p>
+        Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.
+      </p>
+      <p>
+        Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!
+      </p>
+    </div>
+
+  </main>
+
+  <footer>
+    <p class="coorditates">
+      Барбершоп «Бородинский»<br>
+      Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
+      <a href="">Как нас найти?</a> <br>
+      Телефон: +7 (495) 666-02-66
+    </p>
+
+    <div class="socials">
+      <p>Давайте дружить</p>
+      <ul class="socials-list">
+        <li class="socials-list-item"><a href="" class="vk-link">Вконтакте</a></li>
+        <li class="socials-list-item"><a href="" class="fb-link">Facebook</a></li>
+        <li class="socials-list-item"><a href="" class="inst-link">Instagram</a></li>
+      </ul>
+    </div>
+
+    <div class="copyright">
+      <p>Разработано</p>
+      <a href="" class="btn">HTML Academy</a>
+    </div>
+	</footer>
+
 </body>
 </html>
