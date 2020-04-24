@@ -30,18 +30,22 @@
 	-->
 
 	<header>
-		<div class="logo"></div>
 		<nav class="main-nav">
+			<a>
+				<img src="img/index-logo.svg" width="371" height="153" alt="Логотип барбершопа «Бородинский»">
+			</a>
 			<ul class="main-nav-list">
 				<li><a href="#" class="main-nav-item">Информация</a></li>
 				<li><a href="#" class="main-nav-item">Новости</a></li>
 				<li><a href="price.html" class="main-nav-item">Прайс-лист</a></li>
 				<li><a href="shop.html" class="main-nav-item">Магазин</a></li>
 				<li><a href="#" class="main-nav-item">Контакты</a></li>
-      </ul>
-      <div class="login">
-        <a href="" class="login-link">Вход</a>
-      </div>
+			</ul>
+			<ul class="user-actions-list">
+				<li class="user-actions-list-item">
+					<button type="button">Войти</button>
+				</li>
+			</ul>
 		</nav>
 	</header>
 
@@ -90,19 +94,21 @@
           <time datetime="2020-01-18 00:00">18 января</time>
         </li>
       </ul>
-
-      <div class="all-news">
-        <a href="" class="all-news-btn">Все новости</a>
-      </div>
+			
+			<a href="" class="all-news-btn">Все новости</a>
     </section>
 
     <section class="gallery">
       <h2>Фотогалерея</h2>
       <figure>
-        
-      </figure>
+				<a href="#">
+					<img src="img/gallery-image.jpg" width="286" height="164" alt="Интерьер">
+				</a>
+			</figure>
+			
       <div class="gallery-buttons">
-
+				<button type="button">Назад</button>
+				<button type="button">Вперед</button>
       </div>
     </section>
 
@@ -118,7 +124,11 @@
         Время работы: <br>
         Пн—пт: с 10:00 до 22:00 <br>
         Сб—вс: с 10:00 до 19:00
-      </p>
+			</p>
+			
+			<a href="#" class="btn">Как проехать</a>
+			<a href="#" class="btn">Обратная связь</a>
+
     </section>
 
     <section class="appointment">
@@ -150,9 +160,21 @@
 
     <div class="copyright">
       <p>Разработано</p>
-      <a href="" class="btn">HTML Academy</a>
+      <a href="https://htmlacademy.ru" class="btn">HTML Academy</a>
     </div>
 	</footer>
+
+	<section>
+		<h2>Личный кабинет</h2>
+		<p>Введите пожалуйста свой логин и пароль</p>
+		<!-- Здесь будет форма -->
+		<button type="button">Закрыть</button>
+	</section>
+
+	<section>
+		<h2>Как до нас добраться</h2>
+		<button type="button">Закрыть</button>
+	</section>
 
 </body>
 </html>
