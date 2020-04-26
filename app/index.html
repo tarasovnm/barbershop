@@ -43,7 +43,7 @@
 			</ul>
 			<ul class="user-actions-list">
 				<li class="user-actions-list-item">
-					<button type="button">Войти</button>
+					<a href="login.html" class="user-login">Войти</a>
 				</li>
 			</ul>
 		</nav>
@@ -107,8 +107,8 @@
 			</figure>
 			
       <div class="gallery-buttons">
-				<button type="button">Назад</button>
-				<button type="button">Вперед</button>
+				<button type="button" class="btn">Назад</button>
+				<button type="button" class="btn">Вперед</button>
       </div>
     </section>
 
@@ -134,8 +134,24 @@
     <section class="appointment">
       <h2>Записаться</h2>
       <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-      <form action="#">
-
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <p>
+          <label for="appointment-date">Дата</label>
+          <input id="appointment-date" type="date" name="date" value="2017-10-08">
+        </p>
+        <p>
+          <label for="appointment-time">Время</label>
+          <input id="appointment-time" type="time" name="time" value="10:00">
+        </p>
+        <p>
+          <label for="appointment-name">Ваше имя</label>
+          <input id="appointment-name" type="text" name="name" value="" placeholder="Борода">
+        </p>
+        <p>
+          <label for="appointment-phone">Телефон</label>
+          <input id="appointment-phone" type="text" name="phone" value="" placeholder="+7 123 456-78-90">
+        </p>
+        <button type="submit">Отправить</button>
       </form>
     </section>
 
@@ -164,16 +180,39 @@
     </div>
 	</footer>
 
-	<section>
+	<section class="modal modal-login">
 		<h2>Личный кабинет</h2>
-		<p>Введите пожалуйста свой логин и пароль</p>
-		<!-- Здесь будет форма -->
-		<button type="button">Закрыть</button>
+    <p>Введите пожалуйста свой логин и пароль</p>
+    
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="user-login">Логин</label>
+        <input type="email" name="login" id="user-login" placeholder="email@example.com">
+      </p>
+
+      <p>
+        <label for="user-password">Логин</label>
+        <input type="password" name="password" id="user-password" placeholder="********">
+      </p>
+
+      <p>
+        <input type="checkbox" name="remember" id="login-password-info">
+        <label for="login-password-info">Запомните меня</label>
+        <a href="#">Я забыл пароль</a>
+      </p>
+
+      <button type="submit">Войти</button>
+    </form>
+
+		<button type="button"><span>Закрыть</span></button>
 	</section>
 
-	<section>
-		<h2>Как до нас добраться</h2>
-		<button type="button">Закрыть</button>
+	<section class="modal modal-map">
+    <h2>Как до нас добраться</h2>
+    <p>
+      <img src="img/map.png" width="766" height="560" alt="Карта с адресом: г. Санкт-петербург, Б. Конюшенная, д. 19/8">
+    </p>
+		<button type="button"><span>Закрыть</span></button>
 	</section>
 
 </body>
