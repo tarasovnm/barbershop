@@ -7,12 +7,21 @@
 @include font-face("Roboto", "../fonts/Roboto-LightItalic/Roboto-LightItalic", 300, italic);
 */
 body {
-  font-family: "roboto-example", sans-serif; }
-  body h1, body h2, body h3, body h4, body h5 {
-    /*
-		font-family: "Montserrat";
-		font-weight: bold;
-		*/ }
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #f7f4f1;
+  text-transform: uppercase;
+  background-color: #070707;
+  background-image: url(../img/bg-image.jpg);
+  background-repeat: no-repeat;
+  background-position: top center; }
+
+a {
+  text-decoration: none; }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -27,3 +36,148 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden; }
+
+/* ====== HEADER ===== */
+.main-nav {
+  display: flex;
+  flex-direction: column; }
+
+.main-logo {
+  order: 3;
+  margin: 0 auto;
+  margin-bottom: 75px; }
+
+.navigation-wrapper {
+  min-height: 70px;
+  margin-bottom: 58px;
+  background-color: #000000; }
+
+.navigation-wrapper .container {
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; }
+
+.site-nav,
+.user-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex; }
+
+.site-nav a,
+.user-nav a {
+  color: #f7f4f1;
+  display: block;
+  padding: 25px 20px; }
+
+.site-nav a:hover,
+.site-nav a:focus,
+.user-nav a:hover,
+.user-nav a:focus {
+  background-color: #242424; }
+
+.user-nav .user-login {
+  padding-left: 50px; }
+
+/* ====== ADVANTAGES ===== */
+.advantages-list {
+  margin: 0 auto;
+  margin-bottom: 75px;
+  padding: 0;
+  width: 940px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between; }
+
+.advantages-list-item {
+  box-sizing: border-box;
+  width: 300px;
+  padding: 0 10px;
+  text-align: center; }
+
+.advantages-list-item h3 {
+  font-size: 30px;
+  line-height: 42px; }
+
+/* ====== NEWS AND GALLERY ===== */
+.index-columns {
+  color: #000000;
+  box-sizing: border-box;
+  width: 940px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  padding: 50px 80px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8f5f2;
+  background-image: url(../img/separator.png), url(../img/bg-light.jpg);
+  background-position: center center, 0 0;
+  background-repeat: no-repeat, repeat; }
+
+.index-columns h2 {
+  margin: 0;
+  font-size: 30px;
+  line-height: 42px; }
+
+.news {
+  margin: 0;
+  padding: 0;
+  width: 380px; }
+
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.gallery {
+  margin: 0;
+  padding: 0;
+  width: 300px; }
+
+/* ====== CONTACTS AND APPOINTMENT ===== */
+.contacts {
+  padding: 0;
+  margin: 0;
+  width: 350px; }
+
+.appointment {
+  padding: 0;
+  margin: 0;
+  width: 300px; }
+
+/* ====== FOOTER ===== */
+footer {
+  padding-top: 60px;
+  padding-bottom: 37px;
+  background-origin: #232323;
+  background-image: url(../img/bg-dark.jpg); }
+
+footer .container {
+  width: 940px;
+  margin: 0 auto;
+  display: flex; }
+
+.coordinates {
+  width: 320px;
+  padding: 0;
+  margin: 0;
+  margin-right: 80px; }
+
+.socials {
+  margin: 0;
+  padding: 0;
+  width: 140px; }
+
+.socials p {
+  margin: 0;
+  padding: 0; }
+
+.copyright {
+  margin-left: auto; }
+
+/* ====== MODAL LOGIN ===== */
+.modal {
+  display: none; }
+
+/* ====== MODAL MAP ===== */

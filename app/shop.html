@@ -38,7 +38,55 @@
     </ul>
 
     <form action="https://echo.htmlacademy.ru" method="get" class="filters">
-      <!-- ФОРМА БУДЕТ ЗДЕСЬ-->
+      <fieldset class="manufacturers">
+        <legend>Производители:</legend>
+        <ul class="manufacturers-list">
+          <li class="manufacturers-list-item">
+            <input type="checkbox" name="baxter" id="baxter" checked>
+            <label for="baxter">Baxter of California</label>
+          </li>
+          <li class="manufacturers-list-item">
+            <input type="checkbox" name="natty" id="natty">
+            <label for="natty">Mr Natty</label>
+          </li>
+          <li class="manufacturers-list-item">
+            <input type="checkbox" name="suavecito" id="suavecito" checked>
+            <label for="suavecito">Suavecito</label>
+          </li>
+          <li class="manufacturers-list-item">
+            <input type="checkbox" name="malin_goetz" id="malin_goetz">
+            <label for="malin_goetz">Malin+Goetz</label>
+          </li>
+          <li class="manufacturers-list-item">
+            <input type="checkbox" name="murrays" id="murrays">
+            <label for="murrays">Murray’s</label>
+          </li>
+          <li class="manufacturers-list-item">
+            <input type="checkbox" name="a_crew" id="a_crew" checked>
+            <label for="a_crew">American Crew</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="groups">
+        <legend>Группы товаров:</legend>
+        <ul class="groups-list">
+          <li class="groups-list-item">
+            <input type="radio" name="groups" id="razors">
+            <label for="razors">Бритвенные принадлежности</label>
+          </li>
+          <li class="groups-list-item">
+            <input type="radio" name="groups" id="care">
+            <label for="care">Средства для ухода</label>
+          </li>
+          <li class="groups-list-item">
+            <input type="radio" name="groups" id="accessories">
+            <label for="accessories">Аксессуары</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <a href="#" class="btn filters-btn">Показать</a>
     </form>
 
     <ul class="products-list">

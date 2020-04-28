@@ -2,7 +2,8 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Барбершоп «Бородинский»</title>
+		<title>Барбершоп «Бородинский»</title>
+		<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
 		<link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
@@ -10,12 +11,12 @@
 	<!--
 	Список шагов:
 	[x] импортировать всю графику из psd-файла
-	[ ] сверстать семантический html-код всех страниц (текст + контентные картинки)
-	[ ] скачать все необходимые шрифты (разместить список ниже)
-	[ ] сконвертировать шрифты при необходимости (https://transfonter.org/)
-	[ ] подключить все необходимые шрифты (eot, woff, ttf) и проверить что они работают
-	[ ] определить переменные основных цветов и шрифтов в _vars.scss
-	[ ] задать стили для body - стили базового шрифта, обнулить отступы если необходимо
+	[x] сверстать семантический html-код всех страниц (текст + контентные картинки)
+	[x] скачать все необходимые шрифты (разместить список ниже)
+	[-] сконвертировать шрифты при необходимости (https://transfonter.org/)
+	[x] подключить все необходимые шрифты (eot, woff, ttf) и проверить что они работают
+	[x] определить переменные основных цветов и шрифтов в _vars.scss
+	[x] задать стили для body - стили базового шрифта, обнулить отступы если необходимо
 	[ ] верстать по блокам, для каждого:
 			[ ] стилизация текстовых элементов (размер, цвет, выравнивание)
 			[ ] стилизация ссылок и всех состояний для них
@@ -31,29 +32,33 @@
 
 	<header>
 		<nav class="main-nav">
-			<a>
+			<a class="main-logo">
 				<img src="img/index-logo.svg" width="371" height="153" alt="Логотип барбершопа «Бородинский»">
-			</a>
-			<ul class="main-nav-list">
-				<li><a href="#" class="main-nav-item">Информация</a></li>
-				<li><a href="#" class="main-nav-item">Новости</a></li>
-				<li><a href="price.html" class="main-nav-item">Прайс-лист</a></li>
-				<li><a href="shop.html" class="main-nav-item">Магазин</a></li>
-				<li><a href="#" class="main-nav-item">Контакты</a></li>
-			</ul>
-			<ul class="user-actions-list">
-				<li class="user-actions-list-item">
-					<a href="login.html" class="user-login">Войти</a>
-				</li>
-			</ul>
+      </a>
+      <div class="navigation-wrapper">
+        <div class="container">
+          <ul class="site-nav">
+            <li><a href="#" class="main-nav-item">Информация</a></li>
+            <li><a href="#" class="main-nav-item">Новости</a></li>
+            <li><a href="price.html" class="main-nav-item">Прайс-лист</a></li>
+            <li><a href="shop.html" class="main-nav-item">Магазин</a></li>
+            <li><a href="#" class="main-nav-item">Контакты</a></li>
+          </ul>
+          <ul class="user-nav">
+            <li>
+              <a href="login.html" class="user-login">Войти</a>
+            </li>
+          </ul>
+        </div>
+      </div>
 		</nav>
 	</header>
 
 	<main>
-    <h1>Барбершоп Бородинский</h1>
+    <h1 class="visually-hidden">Барбершоп Бородинский</h1>
     
     <section class="advantages">
-      <h2>Преимущества</h2>
+      <h2 class="visually-hidden">Преимущества</h2>
 
       <ul class="advantages-list">
         <li class="advantages-list-item">
@@ -66,7 +71,8 @@
         <li class="advantages-list-item">
           <h3>Круто</h3>
           <p>
-            Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.
+            Забудьте, как вы стриглись раньше. <br> 
+            Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.
           </p>
         </li>
         <li class="advantages-list-item">
@@ -78,105 +84,111 @@
       </ul>
     </section>
 
-    <section class="news">
-      <h2>Новости</h2>
-      <ul class="news-list">
-        <li class="news-list-item">
+    <div class="index-columns">
+      <section class="news">
+        <h2>Новости</h2>
+        <ul class="news-list">
+          <li class="news-list-item">
+            <p>
+              Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки
+            </p>
+            <time datetime="2020-01-11 00:00">11 января</time>
+          </li>
+          <li class="news-list-item">
+            <p>
+              В нашей команде пополнение, борис «бритва» стригунец, обладaтель множества титулов и наград пополнил наши стройные ряды
+            </p>
+            <time datetime="2020-01-18 00:00">18 января</time>
+          </li>
+        </ul>
+        
+        <a href="" class="all-news-btn">Все новости</a>
+      </section>
+
+      <section class="gallery">
+        <h2>Фотогалерея</h2>
+        <figure>
+          <a href="#">
+            <img src="img/gallery-image.jpg" width="286" height="164" alt="Интерьер">
+          </a>
+        </figure>
+        
+        <div class="gallery-buttons">
+          <button type="button" class="btn">Назад</button>
+          <button type="button" class="btn">Вперед</button>
+        </div>
+      </section>
+    </div>
+
+    <div class="index-columns">
+      <section class="contacts">
+        <h2>Контактная информация</h2>
+        
+        <p class="address-and-phone">
+          Барбершоп «Бородинский» <br>
+          Адрес: г. Санкт-петербург, Б. Конюшенная, д. 19/8 <br>
+          Телефон: +7 (495) 666-02-66
+        </p>
+        <p class="working-hours">
+          Время работы: <br>
+          Пн—пт: с 10:00 до 22:00 <br>
+          Сб—вс: с 10:00 до 19:00
+        </p>
+        
+        <a href="#" class="btn">Как проехать</a>
+        <a href="#" class="btn">Обратная связь</a>
+
+      </section>
+
+      <section class="appointment">
+        <h2>Записаться</h2>
+        <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+        <form action="https://echo.htmlacademy.ru" method="POST">
           <p>
-            Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки
+            <label for="appointment-date">Дата</label>
+            <input id="appointment-date" type="date" name="date" value="2017-10-08">
           </p>
-          <time datetime="2020-01-11 00:00">11 января</time>
-        </li>
-        <li class="news-list-item">
           <p>
-            В нашей команде пополнение, борис «бритва» стригунец, обладaтель множества титулов и наград пополнил наши стройные ряды
+            <label for="appointment-time">Время</label>
+            <input id="appointment-time" type="time" name="time" value="10:00">
           </p>
-          <time datetime="2020-01-18 00:00">18 января</time>
-        </li>
-      </ul>
-			
-			<a href="" class="all-news-btn">Все новости</a>
-    </section>
-
-    <section class="gallery">
-      <h2>Фотогалерея</h2>
-      <figure>
-				<a href="#">
-					<img src="img/gallery-image.jpg" width="286" height="164" alt="Интерьер">
-				</a>
-			</figure>
-			
-      <div class="gallery-buttons">
-				<button type="button" class="btn">Назад</button>
-				<button type="button" class="btn">Вперед</button>
-      </div>
-    </section>
-
-    <section class="contacts">
-      <h2>Контактная информация</h2>
-      
-      <p class="address-and-phone">
-        Барбершоп «Бородинский» <br>
-        Адрес: г. Санкт-петербург, Б. Конюшенная, д. 19/8 <br>
-        Телефон: +7 (495) 666-02-66
-      </p>
-      <p class="working-hours">
-        Время работы: <br>
-        Пн—пт: с 10:00 до 22:00 <br>
-        Сб—вс: с 10:00 до 19:00
-			</p>
-			
-			<a href="#" class="btn">Как проехать</a>
-			<a href="#" class="btn">Обратная связь</a>
-
-    </section>
-
-    <section class="appointment">
-      <h2>Записаться</h2>
-      <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-      <form action="https://echo.htmlacademy.ru" method="POST">
-        <p>
-          <label for="appointment-date">Дата</label>
-          <input id="appointment-date" type="date" name="date" value="2017-10-08">
-        </p>
-        <p>
-          <label for="appointment-time">Время</label>
-          <input id="appointment-time" type="time" name="time" value="10:00">
-        </p>
-        <p>
-          <label for="appointment-name">Ваше имя</label>
-          <input id="appointment-name" type="text" name="name" value="" placeholder="Борода">
-        </p>
-        <p>
-          <label for="appointment-phone">Телефон</label>
-          <input id="appointment-phone" type="text" name="phone" value="" placeholder="+7 123 456-78-90">
-        </p>
-        <button type="submit">Отправить</button>
-      </form>
-    </section>
+          <p>
+            <label for="appointment-name">Ваше имя</label>
+            <input id="appointment-name" type="text" name="name" value="" placeholder="Борода">
+          </p>
+          <p>
+            <label for="appointment-phone">Телефон</label>
+            <input id="appointment-phone" type="text" name="phone" value="" placeholder="+7 123 456-78-90">
+          </p>
+          <button type="submit">Отправить</button>
+        </form>
+      </section>
+    </div>
 
 	</main>
 
 	<footer>
-    <p class="coorditates">
-      Барбершоп «Бородинский»<br>
-      Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
-      <a href="">Как нас найти?</a> <br>
-      Телефон: +7 (495) 666-02-66
-    </p>
+    <div class="container">
+      <p class="coordinates">
+        Барбершоп «Бородинский»<br>
+        Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
+        <a href="">Как нас найти?</a> <br>
+        Телефон: +7 (495) 666-02-66
+      </p>
 
-    <div class="socials">
-      <p>Давайте дружить</p>
-      <ul class="socials-list">
-        <li class="socials-list-item"><a href="" class="vk-link">Вконтакте</a></li>
-        <li class="socials-list-item"><a href="" class="fb-link">Facebook</a></li>
-        <li class="socials-list-item"><a href="" class="inst-link">Instagram</a></li>
-      </ul>
-    </div>
+      <div class="socials">
+        <p>Давайте дружить</p>
+        <ul class="socials-list">
+          <li class="socials-list-item"><a href="" class="vk-link">Вконтакте</a></li>
+          <li class="socials-list-item"><a href="" class="fb-link">Facebook</a></li>
+          <li class="socials-list-item"><a href="" class="inst-link">Instagram</a></li>
+        </ul>
+      </div>
 
-    <div class="copyright">
-      <p>Разработано</p>
-      <a href="https://htmlacademy.ru" class="btn">HTML Academy</a>
+      <div class="copyright">
+        <p>Разработано</p>
+        <a href="https://htmlacademy.ru" class="btn">HTML Academy</a>
+      </div>
     </div>
 	</footer>
 
