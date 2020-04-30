@@ -22,6 +22,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -50,12 +55,12 @@ input[type="radio"].visually-hidden {
 .main-logo {
   order: 3;
   margin: 0 auto;
-  margin-bottom: 75px;
+  margin-bottom: 62px;
 }
 
 .navigation-wrapper {
   min-height: 70px;
-  margin-bottom: 58px;
+  margin-bottom: 63px;
 
   background-color: #000000;
 }
@@ -72,6 +77,9 @@ input[type="radio"].visually-hidden {
 .user-nav {
   margin: 0;
   padding: 0;
+
+  font-size: 16px;
+  line-height: 20px;
 
   list-style: none;
   display: flex;
@@ -93,14 +101,32 @@ input[type="radio"].visually-hidden {
 }
 
 .user-nav .user-login {
+  position: relative;
+
   padding-left: 50px;
+}
+
+.user-nav .user-login::after {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  right: 70px;
+
+  margin-top: -6px;
+
+  width: 14px;
+  height: 14px;
+
+  background-image: url(../img/login-icon.svg);
+  background-repeat: no-repeat;
 }
 
 /* ====== ADVANTAGES ===== */
 
 .advantages-list {
   margin: 0 auto;
-  margin-bottom: 75px;
+  margin-bottom: 65px;
   padding: 0;
   width: 940px;
 
@@ -118,8 +144,30 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages-list-item h3 {
+  position: relative;
+
   font-size: 30px;
   line-height: 42px;
+
+  padding: 0;
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+.advantages-list-item h3::after {
+  content: "";
+
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+
+  background-color: #f7f4f1;
+
+  transform: rotate(45deg);
 }
 
 /* ====== NEWS AND GALLERY ===== */
@@ -131,7 +179,8 @@ input[type="radio"].visually-hidden {
   width: 940px;
   margin: 0 auto;
   margin-bottom: 35px;
-  padding: 50px 80px;
+  padding: 45px 80px;
+  padding-bottom: 50px;
 
   display: flex;
   justify-content: space-between;
@@ -144,6 +193,7 @@ input[type="radio"].visually-hidden {
 
 .index-columns h2 {
   margin: 0;
+  margin-bottom: 20px;
 
   font-size: 30px;
   line-height: 42px;
@@ -162,11 +212,74 @@ input[type="radio"].visually-hidden {
   margin: 0;
 }
 
+.news-list-item {
+  margin-bottom: 21px;
+}
+
+.news-list-item:last-child {
+  margin-bottom: 28px;
+}
+
+.news-list-item p {
+  margin: 0;
+}
+
+.news-list time {
+  text-transform: lowercase;
+}
+
+.btn {
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  color: $text;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+
+  padding: 10px 34px;
+  
+  background-color: #000000;
+  border: none;
+}
+
 .gallery {
   margin: 0;
   padding: 0;
 
   width: 300px;
+}
+
+.gallery-container {
+  position: relative;
+  height: 260px;
+}
+
+.gallery-content {
+  height: 164px;
+  margin: 0;
+
+  background-color: #cccccc;
+  border: 7px solid #ffffff;
+}
+ 
+.gallery-btn {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+
+  width: 140px;
+  margin: 0;
+}
+
+.gallery-btn-back {
+  left: 0;
+}
+
+.gallery-btn-next {
+  right: 0;
 }
 
 /* ====== CONTACTS AND APPOINTMENT ===== */
@@ -176,6 +289,13 @@ input[type="radio"].visually-hidden {
   margin: 0;
 
   width: 350px;
+}
+
+.contacts p {
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 20px;
 }
 
 .appointment {
